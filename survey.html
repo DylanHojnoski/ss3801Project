@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">
+            Home
+        </a>
+        <a href="interviews.html">
+            Interviews
+        </a>
+        <a href="survey.html">
+            Survey
+        </a>
+        <a href="banweb.html">
+            Banweb
+        </a>
+    </div>
+    <main>
+        <div class="content">
+            <ol>
+                <h2>
+                    Results and findings from our survey
+                </h2>
+                <p>
+                Summary of our results
+                </p>
+                <li>
+                    Did you have any prior college credits that you transferred to MTU?
+                    <canvas id="1" style="width:100%;max-width:700px"></canvas>
+                </li>
+                <li>
+                    Select all options that apply regarding credits earned before starting MTU.
+                    AP Credits in high school, Dual-Enrollment in high school, Transfer Student from other college NOT paid or affiliated with a high school?
+                    <canvas id="2" style="width:100%;max-width:700px"></canvas>
+                </li>
+                <li>
+                    How many credits did you transfer?
+                    <canvas id="3" style="width:100%;max-width:700px"></canvas>
+                </li>
+                <li>
+                    Are you a First Generation Student?
+                    <canvas id="4" style="width:100%;max-width:700px"></canvas>
+                </li>
+                <li>
+                    Which of the following best describes your economic class?
+                    <canvas id="5" style="width:100%;max-width:700px"></canvas>
+                </li>
+                <li>
+                    How easy is BanWeb to navigate?
+                    <canvas id="6" style="width:100%;max-width:700px"></canvas>
+                </li>
+                <li>
+                    How easy is it to register for classes on BanWeb?
+                    <canvas id="7" style="width:100%;max-width:700px"></canvas>
+                </li>
+                <li>
+                    How easy is it to understand your degree audit?
+                    <canvas id="8" style="width:100%;max-width:700px"></canvas>
+                </li>
+                <li>
+                    How helpful are the academic advisors?
+                    <canvas id="9" style="width:100%;max-width:700px"></canvas>
+                </li>
+                <li>
+                    What changes could make BanWeb more accessible?
+                    <canvas id="10" style="width:100%;max-width:700px"></canvas>
+                </li>
+                <li>
+                    How prepared did you feel starting your first semester at MTU?
+                    <canvas id="11" style="width:100%;max-width:700px"></canvas>
+                </li>
+                <li>
+                    Have you been concerned that you won't be able to graduate on time?
+                    <canvas id="12" style="width:100%;max-width:700px"></canvas>
+                </li>
+                <li>
+                    What is the highest degree you plan to pursue at MTU?
+                    <canvas id="13" style="width:100%;max-width:700px"></canvas>
+                </li>
+            </ol>
+            <div>
+    </main>
+    <script>
+
+        const options = {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            },
+            plugins: {
+                legend: {
+                    display: false
+                }
+            }
+        }; 
+
+        new Chart(document.getElementById("1"), {
+            type: "bar",
+            data: {
+                labels: ["Yes", "No"],
+                datasets: [{
+                    data: [20, 30]
+                }]
+            },
+            options: options,
+        });
+
+        new Chart(document.getElementById("2"), {
+            type: "bar",
+            data: {
+                labels: ["AP Credits", "Dual-Enrollment", "Transfer"],
+            },
+            options: options,
+        });
+
+        new Chart(document.getElementById("3"), {
+            type: "bar",
+            data: {},
+            options: options,
+        });
+
+        new Chart(document.getElementById("4"), {
+            type: "bar",
+            data: {
+                labels: ["Yes", "No"]
+            },
+            options: options,
+        });
+
+        new Chart(document.getElementById("5"), {
+            type: "bar",
+            data: {
+                labels: ["Lower Class", "Lower-Middle Class", "Middle Class", "Upper-Middle Class", "Upper Class"]
+            },
+            options: options,
+        });
+
+        new Chart(document.getElementById("6"), {
+            type: "bar",
+            data: {
+                labels: ["0", "1", "2", "3" , "4", "5", "6", "7", "8", "9", "10"]
+            },
+            options: options,
+        });
+
+        new Chart(document.getElementById("7"), {
+            type: "bar",
+            data: {
+                labels: ["0", "1", "2", "3" , "4", "5", "6", "7", "8", "9", "10"]
+            },
+            options: options,
+        });
+
+        new Chart(document.getElementById("8"), {
+            type: "bar",
+            data: {
+                labels: ["0", "1", "2", "3" , "4", "5", "6", "7", "8", "9", "10"]
+            },
+            options: options,
+        });
+
+        new Chart(document.getElementById("9"), {
+            type: "bar",
+            data: {
+                labels: ["0", "1", "2", "3" , "4", "5", "6", "7", "8", "9", "10"]
+            },
+            options: options,
+        });
+
+        new Chart(document.getElementById("10"), {
+            type: "bar",
+            data: {},
+            options: options,
+        });
+
+        new Chart(document.getElementById("11"), {
+            type: "bar",
+            data: {
+                labels: ["0", "1", "2", "3" , "4", "5", "6", "7", "8", "9", "10"]
+            },
+            options: options,
+        });
+
+        new Chart(document.getElementById("12"), {
+            type: "bar",
+            data: {
+                labels: ["Yes", "No", "Unsure"]
+            },
+            options: options,
+        });
+
+        new Chart(document.getElementById("13"), {
+            type: "bar",
+            data: {
+                labels: ["Bachelor's", "Master's", "PhD", "Unsure"]
+            },
+            options: options,
+        });
+    </script>
+</body>
+
