@@ -27,3 +27,11 @@ canvas {
     margin-top: 12px;
     margin-bottom: 12px;
 }
+
+ol { 
+    padding-left: 0px;
+}
+
+li {
+    list-style-position: inside;
+}
