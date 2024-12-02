@@ -76,7 +76,6 @@
                 </li>
                 <li>
                     What changes could make BanWeb more accessible?
-                    <canvas id="10"></canvas>
                 </li>
                 <li>
                     How prepared did you feel starting your first semester at MTU?
@@ -113,7 +112,7 @@
             data: {
                 labels: ["Yes", "No"],
                 datasets: [{
-                    data: [20, 30]
+                    data: [30, 8]
                 }]
             },
             options: options,
@@ -123,20 +122,31 @@
             type: "bar",
             data: {
                 labels: ["AP Credits", "Dual-Enrollment", "Transfer"],
+                datasets: [{
+                    data: [20, 14, 4]
+                }]
             },
             options: options,
         });
 
         new Chart(document.getElementById("3"), {
             type: "bar",
-            data: {},
+            data: {
+                labels: ["1-10", "11-20", "21-30", "31-40", "40+"],
+                datasets: [{
+                    data: [9, 6, 8, 2, 5]
+                }]
+            },
             options: options,
         });
 
         new Chart(document.getElementById("4"), {
             type: "bar",
             data: {
-                labels: ["Yes", "No"]
+                labels: ["Yes", "No"],
+                datasets: [{
+                    data: [12, 25]
+                }]
             },
             options: options,
         });
@@ -144,7 +154,10 @@
         new Chart(document.getElementById("5"), {
             type: "bar",
             data: {
-                labels: ["Lower Class", "Lower-Middle Class", "Middle Class", "Upper-Middle Class", "Upper Class"]
+                labels: ["Lower Class", "Lower-Middle Class", "Middle Class", "Upper-Middle Class", "Upper Class"],
+                datasets: [{
+                    data: [3, 8, 17, 7, 3]
+                }]
             },
             options: options,
         });
@@ -152,7 +165,10 @@
         new Chart(document.getElementById("6"), {
             type: "bar",
             data: {
-                labels: ["0", "1", "2", "3" , "4", "5", "6", "7", "8", "9", "10"]
+                labels: ["0", "1", "2", "3" , "4", "5", "6", "7", "8", "9", "10"],
+                datasets: [{
+                    data: [0, 1, 2, 7, 5, 4, 3, 12, 2, 1, 1]
+                }]
             },
             options: options,
         });
@@ -160,7 +176,10 @@
         new Chart(document.getElementById("7"), {
             type: "bar",
             data: {
-                labels: ["0", "1", "2", "3" , "4", "5", "6", "7", "8", "9", "10"]
+                labels: ["0", "1", "2", "3" , "4", "5", "6", "7", "8", "9", "10"],
+                datasets: [{
+                    data: [1, 0, 1, 5, 5, 3, 10, 8, 3, 1, 1]
+                }]
             },
             options: options,
         });
@@ -168,7 +187,10 @@
         new Chart(document.getElementById("8"), {
             type: "bar",
             data: {
-                labels: ["0", "1", "2", "3" , "4", "5", "6", "7", "8", "9", "10"]
+                labels: ["0", "1", "2", "3" , "4", "5", "6", "7", "8", "9", "10"],
+                datasets: [{
+                    data: [1, 3, 4, 2, 7, 0, 6, 6, 4, 4, 1]
+                }]
             },
             options: options,
         });
@@ -176,21 +198,27 @@
         new Chart(document.getElementById("9"), {
             type: "bar",
             data: {
-                labels: ["0", "1", "2", "3" , "4", "5", "6", "7", "8", "9", "10"]
+                labels: ["0", "1", "2", "3" , "4", "5", "6", "7", "8", "9", "10"],
+                datasets: [{
+                    data: [1, 1, 1, 0, 2, 6, 2, 5, 8, 6, 6]
+                }]
             },
             options: options,
         });
 
-        new Chart(document.getElementById("10"), {
-            type: "bar",
-            data: {},
-            options: options,
-        });
+        //new Chart(document.getElementById("10"), {
+        //    type: "bar",
+        //    data: {},
+        //    options: options,
+        //});
 
         new Chart(document.getElementById("11"), {
             type: "bar",
             data: {
-                labels: ["0", "1", "2", "3" , "4", "5", "6", "7", "8", "9", "10"]
+                labels: ["0", "1", "2", "3" , "4", "5", "6", "7", "8", "9", "10"],
+                datasets: [{
+                    data: [1, 0, 1, 3, 2, 3, 4, 12, 9, 2, 1]
+                }]
             },
             options: options,
         });
@@ -198,7 +226,10 @@
         new Chart(document.getElementById("12"), {
             type: "bar",
             data: {
-                labels: ["Yes", "No", "Unsure"]
+                labels: ["Yes", "No", "Unsure"],
+                datasets: [{
+                    data: [6, 26, 6]
+                }]
             },
             options: options,
         });
@@ -206,7 +237,10 @@
         new Chart(document.getElementById("13"), {
             type: "bar",
             data: {
-                labels: ["Bachelor's", "Master's", "PhD", "Unsure"]
+                labels: ["Bachelor's", "Master's", "PhD", "Unsure"],
+                datasets: [{
+                    data: [23, 7, 0, 8]
+                }]
             },
             options: options,
         });
