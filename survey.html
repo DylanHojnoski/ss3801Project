@@ -31,11 +31,11 @@
     <main>
         <div class="content">
             <img src="images/michigan-tech-students-banner2400.png" style="margin-top:12px;"/>
-            <h2>
+            <h2 class="title">
                 Data Summary and Analysis
             </h2>
             <p>
-            Our weeklong survey showed us  the current state of the student body concerning registration for college and classes. The majority of students identified as middle-class and not first-generation students, while the second-largest group was mostly of lower-middle-class, first-generation students.
+            Our weeklong survey showed us  the current state of the student body concerning registration for college and classes. The majority of students identified as middle-class (n=17) and not first-generation students (n=25), while the second-largest group was mostly of lower-middle-class, first-generation students.
             </p>
             <p>
             A big factor in the data was the significant difference in the ability to earn college credits prior to enrollment. Non-first-generation students were more likely to take advantage of opportunities such as AP courses or community college programs to earn credits before starting college. On the other hand, first-generation students often lacked similar opportunities or access to these resources or were not aware of them prior to college.
@@ -79,7 +79,7 @@
             </h3>
             <img src="images/college-preparation.png">
             <p>
-            This graph analyzes the separate questions we asked about their confidence with Michigan Tech’s navigation on their websites, degree audit, advisors, and how well they were prepared for college. Although a small dataset, we can see the difference in confidence for college between first generation and non-first generation students. The confidence for coming to college was the same, but for those who have never experienced college before, the navigation and understanding of the degree audit was very negative. This indicates that they did not have parents, family members, or high school counselors help them through the process. This is even furthered by the fact that for first generation students, their opinion on advisors is super well regarded as they were able to help them through it while the non-first generation college students may have been able to figure it out themselves making them less useful.
+            This graph analyzes the separate questions we asked about their confidence with Michigan Tech’s: navigation on their websites, degree audit, advisors, and how well they were prepared for college. Although a small dataset, we can see the difference in confidence between first generation and non-first generation students. The confidence they had going into their first semester was reletively the same across the board. However, for first-generation students the navigation and understanding of the degree audit was very negative. This indicates that they did not have parents, family members, or high school counselors help them through the process. This is furthered by the fact that first generation students had well regarded opinions of their advisors. This is likely due to first generation students being more reliant on their advisors than the non-first generation students. 
             </p>
 
             <h3>
@@ -87,7 +87,7 @@
             </h3>
             <img src="images/graduation-time.png">
             <p>
-            This graph analyzes the differences between the confidence responses depending on if they were first generation students and if they thought they would graduate on time. Unfortunately our survey was run for a brief amount of time so we could not get enough information for the First generation students who thought they would graduate on time. However, with the data that we did get, it was revealed that those who had a higher understanding of the degree audit, had a better outlook on if they were going to graduate on time, as those who did not understand the degree audit thought they would not graduate on time.
+            This graph analyzes the differences between the confidence responses depending on if they were first generation students and if they thought they would graduate on time. Unfortunately our survey was run for a brief amount of time so we could not get enough information for the first generation students who thought they would graduate on time. However, with the data that we did get, it was revealed that those who had a higher understanding of the degree audit had a more positive outlook on if they were going to graduate on time, as those who did not understand the degree audit thought they would not graduate on time.
             </p>
 
             <h2>
@@ -278,7 +278,17 @@
                     data: [0, 1, 2, 7, 5, 4, 3, 12, 2, 1, 1]
                 }]
             },
-            options: options,
+            options: { ...options,
+                scales: {
+                    x: {
+                        title: {
+                            display: true,
+                            text: "0-10"
+                        }
+                    }
+                }
+
+            },
         });
 
         new Chart(document.getElementById("7"), {
@@ -289,7 +299,17 @@
                     data: [1, 0, 1, 5, 5, 3, 10, 8, 3, 1, 1]
                 }]
             },
-            options: options,
+            options: { ...options,
+                scales: {
+                    x: {
+                        title: {
+                            display: true,
+                            text: "0-10"
+                        }
+                    }
+                }
+
+            },
         });
 
         new Chart(document.getElementById("8"), {
@@ -300,7 +320,17 @@
                     data: [1, 3, 4, 2, 7, 0, 6, 6, 4, 4, 1]
                 }]
             },
-            options: options,
+            options: { ...options,
+                scales: {
+                    x: {
+                        title: {
+                            display: true,
+                            text: "0-10"
+                        }
+                    }
+                }
+
+            },
         });
 
         new Chart(document.getElementById("9"), {
@@ -311,14 +341,18 @@
                     data: [1, 1, 1, 0, 2, 6, 2, 5, 8, 6, 6]
                 }]
             },
-            options: options,
-        });
+            options: { ...options,
+                scales: {
+                    x: {
+                        title: {
+                            display: true,
+                            text: "0-10"
+                        }
+                    }
+                }
 
-        //new Chart(document.getElementById("10"), {
-            //    type: "bar",
-            //    data: {},
-            //    options: options,
-            //});
+            },
+        });
 
         new Chart(document.getElementById("11"), {
             type: "bar",
@@ -328,7 +362,17 @@
                     data: [1, 0, 1, 3, 2, 3, 4, 12, 9, 2, 1]
                 }]
             },
-            options: options,
+            options: { ...options,
+                scales: {
+                    x: {
+                        title: {
+                            display: true,
+                            text: "0-10"
+                        }
+                    }
+                }
+
+            },
         });
 
         new Chart(document.getElementById("12"), {

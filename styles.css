@@ -133,3 +133,8 @@ ol {
 li {
     list-style-position: inside;
 }
+
+.interviewResponse {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
